@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh My Calculator</title>
+    <link rel="stylesheet" href="stroke.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body>
+    
+        <div class="container">
+            <div class="display2">
+                1. Apa jenis kelamin Anda?
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="input1('laki-laki')">Laki-laki</button>
+                    <button onclick="input1('perempuan')">Perempuan</button>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ricek" onclick="dicek.value='ok'">check</button>
+                    <output id="cek" type="text"></output>
+                </div>
+
+            </div>
+
+            <div class="display2">
+                2. Kategori umur
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="input2('anak-anak')">Anak-anak</button>
+                    <button onclick="input2('remaja')">Remaja</button>
+                    <button onclick="input2('dewasa')">Dewasa</button>
+                    <button onclick="input2('pra lanjut usia')">Pra lanjut usia</button>
+                    <button onclick="input2('lanjut usia')">Lanjut usia</button>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ricek" onclick="dicek.value='ok'">check</button>
+                    <output id="cek" type="text"></output>
+                </div>
+
+            <div class="display2">
+                3. Apakah Anda memiliki riwayat hipertensi?
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="input3('Ya')">Ya</button>
+                    <button onclick="input3('Tidak')">Tidak</button>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ricek" onclick="dicek.value='ok'">check</button>
+                    <output id="cek" type="text"></output>
+                </div>
+
+            <div class="display2">
+                4. Apakah Anda memiliki riwayat penyakit jantung?
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="input4('Ya')">Ya</button>
+                    <button onclick="input4('Tidak')">Tidak</button>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ricek" onclick="dicek.value='ok'">check</button>
+                    <output id="cek" type="text"></output>
+                </div>
+
+            <div class="display2">
+                5. Apakah status pernikahan Anda?
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="input5('Ya')">Menikah</button>
+                    <button onclick="input5('Tidak')">Tidak Menikah</button>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ricek" onclick="dicek.value='ok'">check</button>
+                    <output id="cek" type="text"></output>
+                </div>
+
+            <div class="display2">
+                6. Apakah tipe pekerjaan Anda?
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="input6('ASN')">ASN</button>
+                    <button onclick="input6('self-employed')">Self-employed</button>
+                    <button onclick="input6('wiraswasta')">Wiraswasta</button>
+                    <button onclick="input6('belum bekerja')">Belum bekerja</button>
+                    <button onclick="input6('tidak bekerja')">Tidak bekerja</button>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ricek" onclick="dicek.value='ok'">check</button>
+                    <output id="cek" type="text"></output>
+                </div>
+
+            <div class="display2">
+                7. Dimanakah area tempat tinggal Anda?
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="input7('perkotaan')">Perkotaan</button>
+                    <button onclick="input7('pedesaan')">Pedesaan</button>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ricek" onclick="dicek.value='ok'">check</button>
+                    <output id="cek" type="text"></output>
+                </div>
+
+            <div class="display2">
+                8. Apakah Anda memiliki riwayat diabetes?
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="input8('Ya')">Ya</button>
+                    <button onclick="input8('Tidak')">Tidak</button>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ricek" onclick="dicek.value='ok'">check</button>
+                    <output id="cek" type="text"></output>
+                </div>
+            
+            <div class="display2">
+                9. Kategori Obesitas
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="input9('kurus')">Kurus</button>
+                    <button onclick="input9('normal')">Normal</button>
+                    <button onclick="input9('obesitas')">Obesitas</button>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ricek" onclick="dicek.value='ok'">check</button>
+                    <output id="cek" type="text"></output>
+                </div>
+
+            <div class="display2">
+                10. Apakah status merokok Anda?
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button onclick="input10('tidak merokok')">Tidak Merokok</button>
+                    <button onclick="input10('pernah merokok')">Pernah Merokok</button>
+                    <button onclick="input10('merokok')">Merokok</button>
+                </div>
+
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ricek" onclick="dicek.value='ok'">check</button>
+                    <output id="cek" type="text"></output>
+                </div>
+
+            <div class="btns">
+                <div class="rows">
+                    <button id="eval" onclick="predict()">Submit</button>
+                </div>
+
+            </div>
+
+            <div class="display">
+                <output id="screen" type="text">
+            </div>
+
+        </div>
+</body>
+
+<script src="stroke.js" type="text/javascript" ></script>
+
+</html>
