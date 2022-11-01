@@ -586,6 +586,12 @@ function predict2()
                 }
             }
         }
+    } else
+    {
+        if (rule4==0)
+        {
+            
+        }
     }
             
 }
