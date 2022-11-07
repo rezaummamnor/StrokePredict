@@ -896,6 +896,13 @@ function predict2()
                                                                 }
                                                             }
                                                         }
+                                                    } else
+                                                    {
+                                                        if(rule10=='merokok')
+                                                        {
+                                                            prediksi = 'tidak stroke'
+                                                            screen.value = prediksi
+                                                        }
                                                     }
                                                 }
                                             }
