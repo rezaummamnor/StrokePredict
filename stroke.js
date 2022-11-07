@@ -614,13 +614,13 @@ function predict2()
                             {
                                 if(rule10=='merokok')
                                 {
-                                    if(rule6=='perkotaan')
+                                    if(rule7=='perkotaan')
                                     {
                                         prediksi = 'tidak stroke'
                                         screen.value = prediksi
                                     } else
                                     {
-                                        if(rule6=='pedesaan')
+                                        if(rule7=='pedesaan')
                                         {
                                             if(rule1=='laki-laki')
                                             {
