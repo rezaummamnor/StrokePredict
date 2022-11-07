@@ -1566,9 +1566,16 @@ function predict2()
                                                                             {
                                                                                 prediksi = 'tidak stroke'
                                                                                 screen.value = prediksi
-                                                                            }
+                                                                            } else
+                                                                            {
+                                                                                if(rule6=='ASN' || 'belum bekerja'|| 'tidak bekerja')
+                                                                                {
+                                                                                    prediksi = 'stroke'
+                                                                                    screen.value = prediksi
+                                                                                }
+                                                                            } 
                                                                         }
-                                                                    }
+                                                                    } 
                                                                 }
                                                             } else
                                                             {
@@ -2381,6 +2388,71 @@ function predict2()
                                                                         }
                                                                     }
                                                                 }
+                                                            }
+                                                        } else
+                                                        {
+                                                            if(rule10=='merokok')
+                                                            {
+                                                                if(rule5==0)
+                                                                {
+                                                                    if(rule7=='pedesaan')
+                                                                    {
+                                                                        prediksi = 'tidak stroke'
+                                                                        screen.value = prediksi
+                                                                    } else
+                                                                    {
+                                                                        if(rule7=='perkotaan')
+                                                                        {
+                                                                            if(rule6=='ASN')
+                                                                            {
+                                                                                prediksi = 'stroke'
+                                                                                screen.value = prediksi
+                                                                            } else
+                                                                            {
+                                                                                if(rule6=='wiraswasta')
+                                                                                {
+                                                                                    prediksi = 'tidak stroke'
+                                                                                    screen.value = prediksi
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                } else
+                                                                {
+                                                                    if(rule5==1)
+                                                                    {
+                                                                        if(rule8==1)
+                                                                        {
+                                                                            prediksi = 'tidak stroke'
+                                                                            screen.value = prediksi
+                                                                        } else
+                                                                        {
+                                                                            if(rule8==0)
+                                                                            {
+                                                                                if(rule6=='ASN')
+                                                                                {
+                                                                                    prediksi = 'tidak stroke'
+                                                                                    screen.value = prediksi
+                                                                                } else
+                                                                                {
+                                                                                    if(rule6=='self-employed')
+                                                                                    {
+                                                                                        prediksi = 'stroke'
+                                                                                        screen.value = prediksi
+                                                                                    } else
+                                                                                    {
+                                                                                        if(rule6=='wiraswasta')
+                                                                                        {
+                                                                                            prediksi = 'tidak stroke'
+                                                                                            screen.value = prediksi
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                
                                                             }
                                                         }
                                                     }
