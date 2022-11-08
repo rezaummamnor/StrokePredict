@@ -2339,56 +2339,140 @@ function predict2()
                                                         {
                                                             if(rule5==0)
                                                             {
-                                                                if(rule7=='pedesaan')
-                                                                {
-                                                                    prediksi = 'tidak stroke'
-                                                                    screen.value = prediksi
-                                                                } else
-                                                                {
-                                                                    if(rule7=='perkotaan')
-                                                                    {
-                                                                        if(rule6=='ASN')
-                                                                        {
-                                                                            prediksi = 'stroke'
-                                                                            screen.value = prediksi
-                                                                        } else
-                                                                        {
-                                                                            if(rule6=='wiraswasta')
-                                                                            {
-                                                                                prediksi = 'tidak stroke'
-                                                                                screen.value = prediksi
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
+                                                                prediksi = 'tidak stroke'
+                                                                screen.value = prediksi
                                                             } else
                                                             {
                                                                 if(rule5==1)
                                                                 {
-                                                                    if(rule8==1)
+                                                                    if(rule1=='laki-laki')
                                                                     {
-                                                                        prediksi = 'tidak stroke'
-                                                                        screen.value = prediksi
-                                                                    } else
-                                                                    {
-                                                                        if(rule8==0)
+                                                                        if(rule8==1)
                                                                         {
-                                                                            if(rule6=='ASN')
+                                                                            if(rule7=='pedesaan')
                                                                             {
                                                                                 prediksi = 'tidak stroke'
                                                                                 screen.value = prediksi
                                                                             } else
                                                                             {
-                                                                                if(rule6=='self-employed')
+                                                                                if(rule7=='perkotaan')
                                                                                 {
-                                                                                    prediksi = 'stroke'
+                                                                                    if(rule6=='ASN')
+                                                                                    {
+                                                                                        prediksi = 'stroke'
+                                                                                        screen.value = prediksi
+                                                                                    } else
+                                                                                    {
+                                                                                        if(rule6=='self-employed')
+                                                                                        {
+                                                                                            prediksi = 'tidak stroke'
+                                                                                            screen.value = prediksi
+                                                                                        } else
+                                                                                        {
+                                                                                            if(rule6=='wiraswasta')
+                                                                                            {
+                                                                                                rediksi = 'tidak stroke'
+                                                                                                screen.value = prediksi
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        } else
+                                                                        {
+                                                                            if(rule8==0)
+                                                                            {
+                                                                                if(rule6=='ASN')
+                                                                                {
+                                                                                    prediksi = 'tidak stroke'
                                                                                     screen.value = prediksi
                                                                                 } else
                                                                                 {
-                                                                                    if(rule6=='wiraswasta')
+                                                                                    if(rule6=='self-employed')
+                                                                                    {
+                                                                                        if(rule7=='perkotaan')
+                                                                                        {
+                                                                                            prediksi = 'tidak stroke'
+                                                                                            screen.value = prediksi
+                                                                                        } else
+                                                                                        {
+                                                                                            if(rule7=='pedesaan')
+                                                                                            {
+                                                                                                prediksi = 'stroke'
+                                                                                                screen.value = prediksi
+                                                                                            }
+                                                                                        }
+                                                                                    } else
+                                                                                    {
+                                                                                        if(rule6=='wiraswasta')
+                                                                                        {
+                                                                                            if(rule7=='perkotaan')
+                                                                                            {
+                                                                                                prediksi = 'stroke'
+                                                                                                screen.value = prediksi
+                                                                                            } else
+                                                                                            {
+                                                                                                if(rule7=='pedesaan')
+                                                                                                {
+                                                                                                    prediksi = 'tidak stroke'
+                                                                                                    screen.value = prediksi
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    } else
+                                                                    {
+                                                                        if(rule1=='perempuan')
+                                                                        {
+                                                                            if(rule8==1)
+                                                                            {
+                                                                                if(rule7=='perkotaan')
+                                                                                {
+                                                                                    prediksi = 'tidak stroke'
+                                                                                    screen.value = prediksi
+                                                                                } else
+                                                                                {
+                                                                                    if(rule7=='pedesaan')
+                                                                                    {
+                                                                                        prediksi = 'stroke'
+                                                                                        screen.value = prediksi
+                                                                                    }
+                                                                                }
+                                                                            } else
+                                                                            {
+                                                                                if(rule8==0)
+                                                                                {
+                                                                                    if(rule7=='perkotaan')
                                                                                     {
                                                                                         prediksi = 'tidak stroke'
                                                                                         screen.value = prediksi
+                                                                                    } else
+                                                                                    {
+                                                                                        if(rule7=='pedesaan')
+                                                                                        {
+                                                                                            if(rule6=='ASN')
+                                                                                            {
+                                                                                                prediksi = 'tidak stroke'
+                                                                                                screen.value = prediksi
+                                                                                            } else
+                                                                                            {
+                                                                                                if(rule6=='self-employed')
+                                                                                                {
+                                                                                                    prediksi = 'stroke'
+                                                                                                    screen.value = prediksi
+                                                                                                } else
+                                                                                                {
+                                                                                                    if(rule6=='wiraswasta')
+                                                                                                    {
+                                                                                                        prediksi = 'tidak stroke'
+                                                                                                        screen.value = prediksi
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
                                                                                     }
                                                                                 }
                                                                             }
