@@ -27,7 +27,13 @@ function input1(param)
        rule1='laki-laki'
     }  else 
         {
-        rule1='perempuan'
+            if (param=='perempuan')
+            {
+                rule1='perempuan'
+            } else
+            {
+                rule1='error'
+            }        
         }
 }
 
@@ -54,7 +60,13 @@ function input2(param)
                     rule2='pra lanjut usia'
                 } else
                 {
-                    rule2='lanjut usia'
+                    if(param=='lanjut usia')
+                    {
+                        rule2='lanjut usia'
+                    } else
+                    {
+                        rule2='error'
+                    }                    
                 }
             }
         } 
@@ -69,9 +81,15 @@ function input3(param)
     {
        rule3=1
     }  else 
+    {
+        if (param=='Tidak')
         {
-        rule3=0
-        }
+            rule3=0
+        }   else
+        {
+            rule3='error'
+        }           
+    }
 }
 
 //riwayat penyakit jantung
@@ -81,9 +99,15 @@ function input4(param)
     {
        rule4=1
     }  else 
+    {
+        if (param=='Tidak')
         {
-        rule4=0
-        }
+            rule4=0
+        }   else
+        {
+            rule4='error'
+        }           
+    }
 }
 
 //status pernikahan
@@ -93,9 +117,15 @@ function input5(param)
     {
        rule5=1
     }  else 
+    {
+        if (param=='Tidak')
         {
-        rule5=0
-        }
+            rule5=0
+        }   else
+        {
+            rule5='error'
+        }           
+    }
 }
 
 //tipe pekerjaan
@@ -116,12 +146,18 @@ function input6(param)
                 rule6='wiraswasta'
             } else
             {
-                if(param=='belum berkerja')
+                if(param=='belum bekerja')
                 {
-                    rule6='belum berkerja'
+                    rule6='belum bekerja'
                 } else
                 {
-                    rule6='tidak berkerja'
+                    if(param=='tidak bekerja')
+                    {
+                        rule6='tidak bekerja'
+                    } else
+                    {
+                        rule6='error'
+                    }
                 }
             }
         } 
@@ -136,9 +172,15 @@ function input7(param)
     {
        rule7='perkotaan'
     }  else 
+    {
+        if (param=='pedesaan')
         {
-        rule7='pedesaan'
-        }
+            rule7='pedesaan'
+        } else
+        {
+            rule7='error'
+        }        
+    }
 }
 
 
@@ -149,9 +191,15 @@ function input8(param)
     {
        rule8=1
     }  else 
+    {
+        if (param=='Tidak')
         {
-        rule8=0
-        }
+            rule8=0
+        }   else
+        {
+            rule8='error'
+        }           
+    }
 }
 
 //kategori obesitas
@@ -167,7 +215,13 @@ function input9(param)
             rule9='normal'
         } else
         {
-            rule9='obesitas'
+            if(param=='obesitas')
+            {
+                rule9='obesitas'
+            } else
+            {
+                rule9='error'
+            }            
         }
     }
 }
@@ -186,69 +240,18 @@ function input10(param)
             rule10='pernah merokok'
         } else
         {
-            rule10='merokok'
+            if(param=='merokok')
+            {
+                rule10='merokok'
+            } else
+            {
+                rule10='error'
+            }            
         }
     }
 }
 
-
 function predict()
-{
-    if (rule3==1)
-    {
-        if (rule4==1)
-        {
-            prediksi = 'stroke'
-            screen.value = prediksi
-        }   else
-            {
-                prediksi = 'tidak stroke'
-                screen.value = prediksi
-            }
-
-    }   else
-        {
-            if (rule4==1)
-            {
-                prediksi = 'stroke'
-                screen.value = prediksi
-            }   else
-                {
-                    prediksi = 'tidak stroke'
-                    screen.value = prediksi
-                }
-        }
-    }
-
-function predict()
-{
-    if (rule3==1)
-    {
-        if (rule4==1)
-        {
-            prediksi = 'stroke'
-            screen.value = prediksi
-        }   else
-            {
-                prediksi = 'tidak stroke'
-                screen.value = prediksi
-            }
-
-    }   else
-        {
-            if (rule4==1)
-            {
-                prediksi = 'stroke'
-                screen.value = prediksi
-            }   else
-                {
-                    prediksi = 'tidak stroke'
-                    screen.value = prediksi
-                }
-        }
-    }
-
-function predict2()
 {
     if (rule4==1)
     {
